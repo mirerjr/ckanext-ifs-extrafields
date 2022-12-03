@@ -1,0 +1,14 @@
+# ifs_extrafields-js:
+#   filter: rjsmin
+#   output: ckanext-ifs_extrafields/%(version)s-ifs_extrafields.js
+#   contents:
+#     - js/ifs_extrafields.js
+#   extra:
+#     preload:
+#       - base/main
+
+# ifs_extrafields-css:
+#   filter: cssrewrite
+#   output: ckanext-ifs_extrafields/%(version)s-ifs_extrafields.css
+#   contents:
+#     - css/ifs_extrafields.css
