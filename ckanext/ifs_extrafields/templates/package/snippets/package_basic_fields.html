@@ -1,0 +1,14 @@
+{% ckan_extends %}
+
+{% block package_basic_fields_custom %}
+    {{ form.input('area_conhecimento', label=_('Área do Conhecimento'), id='field-area_conhecimento', placeholder=_('área do conhecimento'), value=data.area_conhecimento, error=errors.area_conhecimento, classes=['control-medium']) }}
+    {{ form.input('campus', label=_('Campus'), id='field-campus', placeholder=_('campus'), value=data.campus, error=errors.campus, classes=['control-medium']) }}
+    {{ form.input('curso', label=_('Curso'), id='field-curso', placeholder=_('curso'), value=data.curso, error=errors.curso, classes=['control-medium']) }}
+    {{ form.input('tipo_componente', label=_('Tipo de Componente'), id='field-tipo_componente', placeholder=_('tipo de componente'), value=data.tipo_componente, error=errors.tipo_componente, classes=['control-medium']) }}
+    {{ form.input('periodo_ano', label=_('Período/Ano'), id='field-periodo_ano', placeholder=_('período/ano'), value=data.periodo_ano, error=errors.periodo_ano, classes=['control-medium']) }}
+    {{ form.input('carga_horaria', label=_('Carga Horária'), id='field-carga_horaria', placeholder=_('Carga Horária'), value=data.carga_horaria, error=errors.carga_horaria, classes=['control-medium']) }}
+    {{ form.input('disciplinas', label=_('Disciplinas'), id='field-disciplinas', placeholder=_('disciplinas'), value=data.disciplinas, error=errors.disciplinas, classes=['control-medium']) }}
+    {{ form.input('apl', label=_('APL'), id='field-apl', placeholder=_('APL'), value=data.apl, error=errors.apl, classes=['control-medium']) }}
+    {{ form.input('area_conhecimento', label=_('Área do Conhecimento'), id='field-area_conhecimento', placeholder=_('área do conhecimento'), value=data.area_conhecimento, error=errors.area_conhecimento, classes=['control-medium']) }}
+    {{ form.input('fator_inovacao', label=_('Fator de Inovação'), id='field-fator_inovacao', placeholder=_('fator de inovação'), value=data.fator_inovacao, error=errors.fator_inovacao, classes=['control-medium']) }}
+{% endblock %}

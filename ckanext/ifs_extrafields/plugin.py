@@ -6,7 +6,8 @@ import ckan.plugins as plugins
 import ckan.plugins.toolkit as toolkit
 
 class IfsExtrafieldsPlugin(plugins.SingletonPlugin, toolkit.DefaultDatasetForm):
-    plugins.implements(plugins.IDatasetForm)    
+    plugins.implements(plugins.IDatasetForm)
+    plugins.implements(plugins.IConfigurer)    
     
     def create_package_schema(self) -> Schema:
         schema: Schema = super(IfsExtrafieldsPlugin, self).create_package_schema()
@@ -91,3 +92,7 @@ class IfsExtrafieldsPlugin(plugins.SingletonPlugin, toolkit.DefaultDatasetForm):
         # ele apenas se registra como a escolha padrão (is_fallback)
         return []
 
+    def update_config(self, config: CKANConfig):
+        # Adiciona o diretório do template deste plugin para o 'extra_template_paths do CKAN,
+        # Com isso o CKAN vai utilizar o template customziado deste plugin
+        toolkit.add_template_directory(config, 'templates')
