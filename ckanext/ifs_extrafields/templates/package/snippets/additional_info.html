@@ -1,0 +1,64 @@
+{% ckan_extends %}
+
+{% block extras %}
+    {% if pkg_dict.area_conhecimento %}
+    <tr>
+        <th scope="row" class="dataset-label">{{ _("Área do Conhecimento") }}</th>
+        <td class="dataset-details">{{ pkg_dict.area_conhecimento }}</td>
+    </tr>
+    {% endif %}
+    {% if pkg_dict.campus %}
+    <tr>
+        <th scope="row" class="dataset-label">{{ _("Campus") }}</th>
+        <td class="dataset-details">{{ pkg_dict.campus }}</td>
+    </tr>
+    {% endif %}
+    {% if pkg_dict.curso %}
+    <tr>
+        <th scope="row" class="dataset-label">{{ _("Curso") }}</th>
+        <td class="dataset-details">{{ pkg_dict.curso }}</td>
+    </tr>
+    {% endif %}
+    {% if pkg_dict.tipo_componente %}
+    <tr>
+        <th scope="row" class="dataset-label">{{ _("Tipo de Componente") }}</th>
+        <td class="dataset-details">{{ pkg_dict.tipo_componente }}</td>
+    </tr>
+    {% endif %}
+    {% if pkg_dict.periodo_ano %}
+    <tr>
+        <th scope="row" class="dataset-label">{{ _("Período/Ano") }}</th>
+        <td class="dataset-details">{{ pkg_dict.periodo_ano }}</td>
+    </tr>
+    {% endif %}
+    {% if pkg_dict.carga_horaria %}
+    <tr>
+        <th scope="row" class="dataset-label">{{ _("Carga Horária") }}</th>
+        <td class="dataset-details">{{ pkg_dict.carga_horaria }}</td>
+    </tr>
+    {% endif %}
+    {% if pkg_dict.disciplinas %}
+    <tr>
+        <th scope="row" class="dataset-label">{{ _("Disciplinas") }}</th>
+        <td class="dataset-details">{{ pkg_dict.disciplinas }}</td>
+    </tr>
+    {% endif %}
+    {% if pkg_dict.apl %}
+    <tr>
+        <th scope="row" class="dataset-label">{{ _("APL") }}</th>
+        <td class="dataset-details">{{ pkg_dict.apl }}</td>
+    </tr>
+    {% endif %}
+    {% if pkg_dict.area_conhecimento %}
+    <tr>
+        <th scope="row" class="dataset-label">{{ _("Área do Conhecimento") }}</th>
+        <td class="dataset-details">{{ pkg_dict.area_conhecimento }}</td>
+    </tr>
+    {% endif %}
+    {% if pkg_dict.fator_inovacao %}
+    <tr>
+        <th scope="row" class="dataset-label">{{ _("Fator de Inovação") }}</th>
+        <td class="dataset-details">{{ pkg_dict.fator_inovacao }}</td>
+    </tr>
+    {% endif %}
+{% endblock %}
