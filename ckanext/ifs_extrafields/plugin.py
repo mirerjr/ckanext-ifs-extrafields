@@ -1,5 +1,4 @@
 # encoding: utf-8
-from __future__ import annotations
 
 import ckan.plugins as plugins
 import ckan.plugins.toolkit as toolkit
